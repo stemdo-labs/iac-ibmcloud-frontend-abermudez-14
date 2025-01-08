@@ -11,7 +11,6 @@ RUN npm run build
  
 FROM nginxinc/nginx-unprivileged
 
-USER 1000660001  
 
 COPY --from=build /app/dist /usr/share/nginx/html
  
