@@ -9,7 +9,7 @@ COPY . .
  
 RUN npm run build
  
-FROM nginx:stable-alpine
+FROM nginxinc/nginx-unprivileged
 
 USER 999
 
